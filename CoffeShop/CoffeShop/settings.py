@@ -163,6 +163,10 @@ DEBUG = True  # Set to False in production!
 # Add your domain(s) here
 ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1', 'coffe.rootmatrix.cloud']
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://coffe.rootmatrix.cloud",
+    "http://coffe.rootmatrix.cloud",
+]
 
 # Application definition
 INSTALLED_APPS = [
